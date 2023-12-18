@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1 {
+            background-color: teal;
+            color: white;
+            padding: 20px;
+            text-align: justify;
+            width: 300px;
+            height: 300px;
+            font-size: 25px;
+        }
+        #box2 {
+            background-color: purple;
+            color: white;
+            padding: 20px;
+            text-align: justify;
+            width: 400px;
+            height: 400px;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+     <div id="box1" >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam vel voluptatibus eos illo cumque ullam excepturi, voluptate laudantium nostrum, quisquam quaerat. Quae minus enim aut natus iure? Eius, aspernatur itaque!
+     </div>
+     <div id="box2" >
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, eaque? Minima nam harum magni officiis nulla minus. Unde exercitationem natus porro, tenetur blanditiis, ipsam minima numquam, adipisci autem quod laborum!
+     </div>
+     <button class="btn1">News 1</button>
+     <button class="btn2">News 2</button>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+     <script>
+            $(document).ready(function () {
+            $("#box2").hide();
+            $(".btn2").click(function () {
+                $("#box1").hide(2000);
+                $("#box2").show(3000);
+            })
+
+            $(".btn1").click(function () {
+                $("#box2").hide(2000);
+                $("#box1").show(3000);
+            })
+        })
+
+
+        // $(document).ready(function(){
+        //  $("#box2").hide();
+        //  $(".btn2").click(function(){
+        //      $("box1").hide(2000);
+        //      $("box2").show(3000);
+        //  }) 
+
+        //  $(".btn1").click(function () {
+        //         $("#box2").hide(2000);
+        //         $("#box1").show(3000);
+        //     })
+
+        // })
+     </script>
+</body>
+
+</html>
